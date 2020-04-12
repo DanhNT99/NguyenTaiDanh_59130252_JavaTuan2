@@ -78,7 +78,7 @@ public class NhanVien {
         double tienThuong;
         if(tongGio >= 200)
             tienThuong = tienLuong * 20 / 100;
-        else if(tongGio < 200 || tongGio >= 100)
+        else if(tongGio < 200 && tongGio >= 100)
             tienThuong = tienLuong * 10 / 100;
         else 
             tienThuong = 0;
