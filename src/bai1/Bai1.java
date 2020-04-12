@@ -22,6 +22,6 @@ public class Bai1 {
         nhanvien.diaChi = "Vĩnh Phước-Nha Trang";
         nhanvien.tienLuong = 2000;
         nhanvien.tongGio = 190;
-        nhanvien.getThongTin();
-        nhanvien.tinhThuong();
+        System.out.println(nhanvien.getThongTin());
+        System.out.println("Tiền thưởng: "nhanvien.tinhTienThuong());
 }

@@ -26,23 +26,62 @@ public class NhanVien {
         this.tienLuong = tienLuong;
         this.tongGio = tongGio;
     }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public int getTuoi() {
+        return tuoi;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public double getTienLuong() {
+        return tienLuong;
+    }
+
+    public int getTongGio() {
+        return tongGio;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
+    }
+
+    public void setTuoi(int tuoi) {
+        this.tuoi = tuoi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public void setTienLuong(double tienLuong) {
+        this.tienLuong = tienLuong;
+    }
+
+    public void setTongGio(int tongGio) {
+        this.tongGio = tongGio;
+    }
+    
    public String getThongTin(){
-       System.out.println("Tên: " + ten);
-       System.out.println("Tuổi: " + tuoi);
-       System.out.println("Địa chỉ: " + diaChi);
-       System.out.println("Tiền lương: " + diaChi);
-       System.out.println("Tổng giờ: " + tongGio);
-        return null;
+      return "ten: " + ten +"\n"
+             + "tuoi: " + tuoi + "\n"
+             + "diaChi: " + diaChi + "\n"
+             + "tienLuong: " + tienLuong + "\n"
+             + "tongGioLam: " + tongGio + "\n";
    }
-    @SuppressWarnings("empty-statement")
-   public double tinhThuong(){
-        if(tongGio >= 200){
-            System.out.println("Tien thuong: " + tienLuong * 20/100);
-        }
-        if(tongGio < 200 && tongGio >= 100){
-           System.out.println("Tien thuong: " + tienLuong * 10/100);
-        }
-        if(tongGio < 100){
-                System.out.println("Tien thuong: " + 0 * tienLuong);
-        }
+      public double tinhTienThuong(){
+        double tienThuong;
+        if(tongGio >= 200)
+            tienThuong = tienLuong * 20 / 100;
+        else if(tongGio < 200 && tongGio >= 100)
+            tienThuong = tienLuong * 10 / 100;
+        else 
+            tienThuong = 0;
+        return tienThuong;
+    }  
 }
