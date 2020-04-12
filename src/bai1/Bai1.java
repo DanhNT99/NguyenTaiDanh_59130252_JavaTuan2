@@ -16,8 +16,8 @@ public class Bai1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        NhanVien nhanvien = new NhanVien("Nguyễn Tài Danh",22,"Vĩnh Phước - Nha Trang",2000,190);
-        NhanVien nhanvien1 = new NhanVien("Nguyễn Hải",26,"Tuy an - Phú yên",2000,300);
+        NhanVien nhanvien = new NhanVien("Nguyễn Tài Danh",22,"Vĩnh Phước - Nha Trang",2000000,190);
+        NhanVien nhanvien1 = new NhanVien("Nguyễn Hải",26,"Tuy an - Phú yên",2000000,300);
         
         System.out.println(nhanvien.getThongTin() + "Tiền thưởng: " + nhanvien.tinhTienThuong() +"\n");
         System.out.println(nhanvien1.getThongTin() + "Tiền thưởng: " + nhanvien1.tinhTienThuong());
