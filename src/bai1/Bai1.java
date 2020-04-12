@@ -22,3 +22,4 @@ public class Bai1 {
         System.out.println(nhanvien.getThongTin() + "Tiền thưởng: " + nhanvien.tinhTienThuong() +"\n");
         System.out.println(nhanvien1.getThongTin() + "Tiền thưởng: " + nhanvien1.tinhTienThuong());
     }
+}
