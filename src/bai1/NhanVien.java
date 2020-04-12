@@ -30,6 +30,8 @@ public class NhanVien {
        System.out.println("Tên: " + ten);
        System.out.println("Tuổi: " + tuoi);
        System.out.println("Địa chỉ: " + diaChi);
+       System.out.println("Tiền lương: " + diaChi);
+       System.out.println("Tổng giờ: " + tongGio);
         return null;
    }
     @SuppressWarnings("empty-statement")
